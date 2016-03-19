@@ -16,7 +16,9 @@ namespace TimeTable
         public BookingDetail()
         {
             InitializeComponent();
-
+            this.lesson.AutoCompleteCustomSource = RoomBookings.autocompleteLessons;
+            this.lesson.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            this.lesson.AutoCompleteSource = AutoCompleteSource.CustomSource;
             this.room.Items.Clear();
             foreach (string r in RoomBookings.roomList)
                 this.room.Items.Add(r);

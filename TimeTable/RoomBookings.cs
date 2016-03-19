@@ -32,6 +32,7 @@ namespace TimeTable
         SortedDictionary<string, string> comboSource = new SortedDictionary<string, string>();
 
         public static List<booking> bookingList = new List<booking>();
+        public static AutoCompleteStringCollection autocompleteLessons = new AutoCompleteStringCollection();  // Used to set the autocomplete in lesson desc.
         private ShapeContainer timeTable = new ShapeContainer();
         public Label title = new Label();
         private int offsetX = 20;
@@ -133,8 +134,11 @@ namespace TimeTable
                 b.Click += new System.EventHandler(this.selectStaff);
                 this.Controls.Add(b);
             }
-
-
+            // Load a text file containing the auto complete entries
+            try {
+                autocompleteLessons.AddRange(File.ReadAllLines("Units.txt"));
+            }
+            catch { autocompleteLessons.AddRange(new string[] {"IT", "GT" }); }
 
             initTimeTable();
             this.Click += new System.EventHandler(this.formclicked);
