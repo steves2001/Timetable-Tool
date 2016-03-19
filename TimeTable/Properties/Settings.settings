@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TimeTable.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="roomList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B112,B114,B115A,B115B,B116,B118,B126,DLCA,DLCB,C201,Other</Value>
+    </Setting>
+    <Setting Name="staffList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">JJ,NM,MM,DR,JR,JS,BS,SS,T1,T2</Value>
+    </Setting>
+    <Setting Name="levelList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">L1,L2,L3,L4,P4</Value>
+    </Setting>
+    <Setting Name="yearList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1,2,3,4</Value>
+    </Setting>
+    <Setting Name="groupList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">A,B,C,D</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
