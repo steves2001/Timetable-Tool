@@ -50,7 +50,7 @@
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>42BF44E70AF93923650CBAE49AEF42C48E0E935E</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>BDE83E2DAA2D4C053AA58D765A0EBF6D13032A3A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>TimeTable_TemporaryKey.pfx</ManifestKeyFile>

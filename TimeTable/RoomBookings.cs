@@ -349,9 +349,10 @@ namespace TimeTable
             int foundIndex = 0;
             bool clash = false;
 
+            if (newBooking.staff == "NS") return -1;  // NS = not staffed so don't check for a clash
+
             foreach (booking b in bookingList)
             {
-
                 if (index == -1 || index != b.id)
                     if (b.staff == newBooking.staff)
                         if (b.day == newBooking.day)
